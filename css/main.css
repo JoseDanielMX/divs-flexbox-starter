@@ -97,39 +97,39 @@ textarea {
 
 
 html {
-  background-color: #fff;
-  height: 100%;
+  background-color: rgb(38, 38, 38);
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em;
   font-size: 1.25em;
-  height: 100%;
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
-  font-weight: 700;
+  font-weight: 400;
   justify-content: space-between;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   align-items: center;
-  background-color: #f16059;
   color: #fff;
   display: flex;
-  font-size: 1.6em;
-  height: 300px;
+  font-size: 0.9em;
+  height: 160px;
   justify-content: center;
   line-height: 1.5em;
+  padding: 1em;
   width: 30%;
 }
 
-
-
+.div-2 {
+    border: 2px rgba(255,255,255,0.4);
+    border-style: none solid;
+}
 
 /* ==========================================================================
    Helper classes
