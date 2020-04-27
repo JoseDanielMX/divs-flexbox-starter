@@ -98,8 +98,12 @@ textarea {
 
 html {
   background-color: rgb(38, 38, 38);
+  color: white;
   height: 100%;
-  width: 100%;
+}
+
+html, header, main, footer {
+    width: 100%;
 }
 
 body {
@@ -108,7 +112,12 @@ body {
   font-size: 1.25em;
 }
 
-.wrapper {
+body, main {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
   /*add display:flex and set justify-content to space-between*/
   display: flex;
   flex-flow: row wrap;
@@ -116,16 +125,43 @@ body {
   justify-content: space-between;
 }
 
+header, footer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+main {
+    border-bottom: 2px solid rgba(255,255,255,0.4);
+    margin-bottom: 1em;
+}
+
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   align-items: center;
-  color: #fff;
   display: flex;
   font-size: 0.9em;
   height: auto;
   justify-content: center;
   line-height: 1.5em;
   padding: 1em;
+}
+
+footer {
+    border-top: 2px solid rgba(255,255,255,0.4);
+    margin: 1em 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul img {
+    padding-right: 0.5em;
+    width: 24px;
 }
 
 /* ==========================================================================
@@ -220,8 +256,7 @@ body {
 
 @media all and (max-width: 1200px) {
     .div-1, .div-2 {
-    border: 2px rgba(255,255,255,0.4);
-    border-style: none none solid none;
+    border-bottom: 2px solid rgba(255,255,255,0.4);
     }
 }
 
